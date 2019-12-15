@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Didact+Gothic|Josefin+Sans|Playfair+Display+SC|Pragati+Narrow|Questrial');
+
+* {
+padding: 0;
+margin: 0;
+}
+header {
+  height: 10vh;
+}
+
+/* body {
+  border: 1em solid blue;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+#container {
+  display: grid;
+  grid-template-columns: 30% 45% 25%;
+  grid-template-rows: 30% 50% 20%;
+  grid-template-areas:
+  "welcome portfolio contact"
+  "about portfolio contact"
+  "about portfolio footer";
+  height: 90vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Questrial, sans-serif;
+  color: #333;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: Questrial, sans-serif;
+  color: #FFF;
+  font-size: 1.4rem;
+  align-self: flex-end;
+  width: 80%;
+  transition: 1s ease-in-out;
+  padding: 5px;
+}
+
+#welcome {
+  grid-area: welcome;
+  background-color: #fff;
+  padding: 3em 4em 0 4em;
+  align-self: center;
+
+}
+
+span {
+    font-weight: bolder;
+}
+
+#about {
+  grid-area: about;
+  background-color: #fff;
+  padding: 3em 4em 0 4em;
+  align-self: center;
+
+}
+
+ p {
+  font-family: Didact Gothic, sans-serif;
+  color: #333;
+  letter-spacing: 2px;
+  line-height: 135%;
+}
+
+#portfolio {
+  grid-area: portfolio;
+  background-color: #fff;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.werk1 {
+    height: 15em;
+    width: 15em;
+display: flex;
+flex-flow: row;
+transition: 0.5s ease-in-out;
+}
+
+.werk1:hover {
+background-color: #333 !important;
+}
+
+#cmdapp img {
+  width: 9em;
+  height: auto;
+}
+
+h2:hover {
+  font-size: 2.2rem;
+  transition: 1s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+
+#cmdapp {
+  background-color: #47e4e0;
+}
+
+#sheekher {
+  background-color: #5500ff;
+}
+
+#expreszo {
+  background-color: #ff3e6d;
+}
+
+#devine {
+  background-color: #fdd043;
+}
+
+#contact {
+  grid-area: contact;
+  background-color: #fff;
+  align-self: center;
+  font-size: 3rem;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #fff;
+}
